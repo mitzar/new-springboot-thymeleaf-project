@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<!--<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">-->
+<!--<head lang="en" xmlns:th="http://www.w3.org/1999/xhtml">-->
+<head>
+    <meta http-equiv="Content-Type" charset="text/html; charset=UTF-8">
+    <!--<link rel="stylesheet" type="text/css" href="@{/css/style.css}" />-->
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" />
+    <title>Welcome</title>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <h2 th:utext="${message}">..!..</h2>
+    <a th:href="@{/personsList}">Persons List</a>
+</body>
+</html>
